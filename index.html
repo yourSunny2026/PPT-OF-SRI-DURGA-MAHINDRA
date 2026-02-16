@@ -123,7 +123,20 @@ td:first-child{
     height:100%;
     border-radius:10px;
 }
-
+    .video-wrapper_2{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%; /* 16:9 ratio */
+    height:0;
+}
+.video-wrapper_2 video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
 </style>
 </head>
 
@@ -164,10 +177,16 @@ td:first-child{
 <div class="video-section">
      <video controls>
             <source src="5.mp4" type="video/mp4">
-          <source src="1 video.mp4" type="video/mp4">
         </video>
        
         
+    </div>
+</div>
+    <div class="video-wrapper_2">
+<div class="video-section_2">
+     <video controls>
+          <source src="1 video.mp4" type="video/mp4">
+        </video> 
     </div>
 </div>
 </body>
